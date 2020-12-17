@@ -7,11 +7,6 @@ In this activity, you'll create a new React-based Google Books Search app. This 
 
 * Deploy this application using Heroku, follow our guide on [deploying MERN applications to Heroku](../04-Important/MERNHerokuDeploy.md) to do so.
 
-### Submission on BCS
-
-* **Please submit both the deployed Heroku link to your homework AND the link to the Github Repository!**
-
-### Instructions
 
 * This application requires at minimum 2 pages, check out the following mockup images for each page:
 
