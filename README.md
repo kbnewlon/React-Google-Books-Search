@@ -1,8 +1,66 @@
 # Google Books Search
 
+
+![GitHub top language](https://img.shields.io/github/languages/top/kbnewlon/project3) ![Libraries.io dependency status for GitHub repo](https://img.shields.io/badge/license-MIT_License-yellowgreen)
+
+## Description
+Use this app to search through Google Books. This app uses the Google Books API.  to searchIn this activity, you'll create a new React-based Google Books Search app. This assignment requires you to create React components, work with helper/util functions, and utilize React lifecycle methods to query and display books based on user searches. You'll also use Node, Express and MongoDB so that users can save books to review or purchase later.
+
+Link to deployed application: 
+
+## **Table of Contents**
+
+1. [Usage](#usage)
+2. [License](#license)
+3. [Framework](#framework)
+4. [Contributors](#contributors)
+5. [Wireframe](#wireframe)
+6. [Technologies](#technologies)
+7. [ERD](#erd)
+8. [Questions](#questions)
+9. [Visuals](#visuals)
+10. [Demos](#demos)
+11. [Links](#links)
+
+
+## **Usage**
+As a user
+ 
+
+
+## **License**
+Copyright (c) 2020, Kayla Newlon. 
+
+
+
+## **Technologies**
+* React.js
+* Node.js
+* Express
+* MongoDB
+* Google Books API
+
+## **Questions**
+Contact our me at kayla.b.newlon@gmail.com for any questions 
+
+## **Visuals**
+![Screenshot of Landing Page](readme-images/screenshot_landing_page.PNG)
+![Screenshot of Profile Page](readme-images/screenshot_profile_page.PNG)
+![Screenshot of Adventures Page](readme-images/screenshot_adventures.PNG)
+![Screenshot of example company landing page](readme-images/screenshot_company_landing.PNG)
+
+## **Demos**
+
+
+
+## **Links**
+Backend Repo: https://github.com/kbnewlon/project3
+<br>Frontend Repo: https://github.com/mfallesen/project3-frontend
+<br>Deployed Application on Heroku: https://minnesvart.herokuapp.com/
+
 ### Overview
 
-In this activity, you'll create a new React-based Google Books Search app. This assignment requires you to create React components, work with helper/util functions, and utilize React lifecycle methods to query and display books based on user searches. You'll also use Node, Express and MongoDB so that users can save books to review or purchase later.
+
 
 
 * Deploy this application using Heroku, follow our guide on [deploying MERN applications to Heroku](../04-Important/MERNHerokuDeploy.md) to do so.
