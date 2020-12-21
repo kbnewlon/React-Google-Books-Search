@@ -12,15 +12,11 @@ Link to deployed application:
 
 1. [Usage](#usage)
 2. [License](#license)
-3. [Framework](#framework)
-4. [Contributors](#contributors)
-5. [Wireframe](#wireframe)
-6. [Technologies](#technologies)
-7. [ERD](#erd)
-8. [Questions](#questions)
-9. [Visuals](#visuals)
-10. [Demos](#demos)
-11. [Links](#links)
+3. [Technologies](#technologies)
+4. [Questions](#questions)
+5. [Visuals](#visuals)
+6. [Demos](#demos)
+7. [Links](#links)
 
 
 ## **Usage**
