@@ -1,7 +1,7 @@
-# Google Books Search
+# React Google Books Search
 
 
-![GitHub top language](https://img.shields.io/github/languages/top/kbnewlon/project3) ![Libraries.io dependency status for GitHub repo](https://img.shields.io/badge/license-MIT_License-yellowgreen)
+![GitHub top language](https://img.shields.io/github/languages/top/kbnewlon/React-Google-Books-Search) ![Libraries.io dependency status for GitHub repo](https://img.shields.io/badge/license-MIT_License-yellowgreen)
 
 ## Description
 Use this app to search through Google Books. This app uses the Google Books API.  to searchIn this activity, you'll create a new React-based Google Books Search app. This assignment requires you to create React components, work with helper/util functions, and utilize React lifecycle methods to query and display books based on user searches. You'll also use Node, Express and MongoDB so that users can save books to review or purchase later.
@@ -41,27 +41,23 @@ Copyright (c) 2020, Kayla Newlon.
 * Google Books API
 
 ## **Questions**
-Contact our me at kayla.b.newlon@gmail.com for any questions 
+Contact me at kayla.b.newlon@gmail.com for any questions 
 
 ## **Visuals**
-![Screenshot of Landing Page](readme-images/screenshot_landing_page.PNG)
-![Screenshot of Profile Page](readme-images/screenshot_profile_page.PNG)
-![Screenshot of Adventures Page](readme-images/screenshot_adventures.PNG)
-![Screenshot of example company landing page](readme-images/screenshot_company_landing.PNG)
+![]()
+![]()
+![]()
+![]()
 
-## **Demos**
+## **Demo**
 
 
 
 ## **Links**
-Backend Repo: https://github.com/kbnewlon/project3
-<br>Frontend Repo: https://github.com/mfallesen/project3-frontend
-<br>Deployed Application on Heroku: https://minnesvart.herokuapp.com/
+Repo:
+<br>Deployed Application on Heroku: 
 
-### Overview
-
-
-
+**Directions to delete upon completion**
 
 * Deploy this application using Heroku, follow our guide on [deploying MERN applications to Heroku](../04-Important/MERNHerokuDeploy.md) to do so.
 
@@ -130,44 +126,4 @@ Backend Repo: https://github.com/kbnewlon/project3
 
   * [Socket.io NPM package](https://www.npmjs.com/package/socket.io)
 
-### Reminder: Submission on BCS
 
-* **This assignment must be deployed.** * Please submit both the deployed Heroku link to your homework AND the link to the Github Repository!
-
-- - -
-
-### Minimum Requirements
-
-Attempt to complete homework assignment as described in instructions. If unable to complete certain portions, please pseudocode these portions to describe what remains to be completed. Hosting on Heroku and adding a README.md are required for this homework. In addition, add this homework to your portfolio, more information can be found below.
-
-- - -
-
-### Create a README.md
-
-Add a `README.md` to your repository describing the project. Here are some resources for creating your `README.md`. Here are some resources to help you along the way:
-
-* [About READMEs](https://help.github.com/articles/about-readmes/)
-
-* [Mastering Markdown](https://guides.github.com/features/mastering-markdown/)
-
-- - -
-
-### Add To Your Portfolio
-
-After completing the homework please add the piece to your portfolio. Make sure to add a link to your updated portfolio in the comments section of your homework so the TAs can easily ensure you completed this step when they are grading the assignment. To receive an 'A' on any assignment, you must link to it from your portfolio.
-
-- - -
-
-### Hosting on Heroku
-
-Now that we have a backend to our applications, we use Heroku for hosting. Please note that while **Heroku is free**, it will request credit card information if you have more than 5 applications at a time or are adding a database.
-
-Please see [Heroku’s Account Verification Information](https://devcenter.heroku.com/articles/account-verification) for more details.
-
-- - -
-
-### One More Thing
-
-If you have any questions about this project or the material we have covered, please post them in the community channels in slack so that your fellow developers can help you! If you're still having trouble, you can come to office hours for assistance from your instructor and TAs.
-
-**Good Luck!**
