@@ -30,5 +30,3 @@ export default {
     return axios.get(BOOKURL + query);
   }
 };
-
-
