@@ -50,7 +50,7 @@ Contact me at kayla.b.newlon@gmail.com for any questions
 
 
 ## **Links**
-Repo:
+Repo: https://github.com/kbnewlon/React-Google-Books-Search
 <br>Deployed Application on Heroku: 
 
 **Directions to delete upon completion**
