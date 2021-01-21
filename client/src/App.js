@@ -1,18 +1,17 @@
-import React from 'react';
-import { BrowserRouter as Router, Route } from 'react-router-dom';
-
-
-
-
-
-
+import React from "react";
+import Books from "./pages/Books";
+import Nav from "./components/Nav";
 
 function App() {
   return (
-    <div className="App">
-     <header>hello</header>
+    <div>
+      <Nav />
+      <Books />
     </div>
   );
 }
 
 export default App;
+
+
+//need to create 
