@@ -11,7 +11,7 @@ const Search = () => {
                     <input type="search" id="form1" className="form-control" placeholder="Search"/>
                     {/* <label className="form-label" for="form1">Search</label> */}
                 </div>
-                <button type="button" className="btn btn-primary">
+                <button type="button" className="btn btn-dark">
                     <i className="fas fa-search"></i>
                 </button>
             </div>

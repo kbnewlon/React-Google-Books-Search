@@ -1,10 +1,24 @@
 .searchContainer{
     /* background-color: salmon; */
+    height: 100px;
+    border-style: solid;
+    border-color: black;
+    border-width: .2rem;
+    
+
+}
+.searchHeader{
+    /* margin-bottom: 10px; */
+    /* padding-bottom: 10px; */
 }
 
 .searchBar{
     position: fixed;
     right: 0px;
-    width: 300px;
+    width: 800px;
     padding: 10px;
+  }
+
+  .form-control{
+      width: 500px;
   }
