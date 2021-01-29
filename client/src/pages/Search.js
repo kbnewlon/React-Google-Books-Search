@@ -5,9 +5,9 @@ import API from "../utils/API";
 import { Col, Row, Container } from "../components/Grid";
 import { List, ListItem } from "../components/List";
 import { Input, TextArea, FormBtn } from "../components/Form";
-import Search from '../components/Search';
+import SearchBar from '../components/SearchBar';
 import Results from '../components/Results'
-import Nav from "./components/Nav";
+import Nav from "../components/Nav";
 
 function Search() {
   // Setting our component's initial state
@@ -33,40 +33,12 @@ function Search() {
     <Container fluid>
       <Nav />
       <Row className="row">
-        {/* <Col size="md-6">
-          <Jumbotron>
-            <h1>What Books Should I Read?</h1>
-          </Jumbotron>
-          <form>
-            <Input
-              onChange={() => { }}
-              name="title"
-              placeholder="Title (required)"
-            />
-            <Input
-              onChange={() => { }}
-              name="author"
-              placeholder="Author (required)"
-            />
-            <TextArea
-              onChange={() => { }}
-              name="synopsis"
-              placeholder="Synopsis (Optional)"
-            />
-            <FormBtn
-              disabled={!(formObject.author && formObject.title)}
-              onClick={() => { }}
-            >
-              Submit Book
-              </FormBtn>
-          </form>
-        </Col> */}
         <Col size="md-12">
           <Jumbotron>
             <h1>(React) Google Books Search</h1>
             <p>Search for and Save Books of Interest</p>
           </Jumbotron>
-          <Search />
+          <SearchBar />
           {books.length ? (
             <List>
               {books.map(book => {

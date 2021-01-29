@@ -5,9 +5,9 @@ import API from "../utils/API";
 import { Col, Row, Container } from "../components/Grid";
 import { List, ListItem } from "../components/List";
 import { Input, TextArea, FormBtn } from "../components/Form";
-import Search from '../components/Search';
+import Search from '../components/SearchBar';
 import Results from '../components/Results'
-import Nav from "./components/Nav";
+import Nav from "../components/Nav";
 
 function Saved() {
     // Setting our component's initial state

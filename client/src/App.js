@@ -5,27 +5,24 @@ import {
   Route,
 } from "react-router-dom";
 import Search from "./pages/Search";
+import Saved from "./pages/Saved";
 
-
-//add router for 2 pages. search and save
 
 
 function App() {
   return (
-    // <div>
-    // <Nav />
     <Router>
       <Switch>
         <Route exact path="/">
           <Search />
         </Route>
-        <Route exact path="/search">
-          <Search />
+        <Route exact path="/saved">
+          <Saved />
         </Route>
 
       </Switch>
     </Router>
-    // </div>
+    
   );
 }
 
