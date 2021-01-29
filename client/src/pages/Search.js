@@ -12,7 +12,7 @@ import Nav from "../components/Nav";
 function Search() {
   // Setting our component's initial state
   const [books, setBooks] = useState([])
-  const [formObject, setFormObject] = useState({})
+  const [formObject, setFormObject] = useState([])
 
   // Load all books and store them with setBooks
   useEffect(() => {
@@ -27,6 +27,8 @@ function Search() {
       )
       .catch(err => console.log(err));
   };
+
+// const onChange = event => setFormObject(event.target.value);
 
 
   return (
