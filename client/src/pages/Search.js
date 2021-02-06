@@ -4,15 +4,16 @@ import DeleteBtn from "../components/DeleteBtn";
 import API from "../utils/API";
 import { Col, Row, Container } from "../components/Grid";
 import { List, ListItem } from "../components/List";
-import { Input, TextArea, FormBtn } from "../components/Form";
-import SearchBar from '../components/SearchBar';
-import Results from '../components/Results'
 import Nav from "../components/Nav";
+
+
+//currently returning the same 10 books everytime search is clicked 
 
 function Search() {
   // Setting our component's initial state
-  const [books, setBooks] = useState([])
-  const [formObject, setFormObject] = useState([])
+  const [books, setBooks] = useState("")
+  const [results, setResults] = useState([])
+  // const [formObject, setFormObject] = useState("")
 
   // Load all books and store them with setBooks
   useEffect(() => {
@@ -28,7 +29,28 @@ function Search() {
       .catch(err => console.log(err));
   };
 
-// const onChange = event => setFormObject(event.target.value);
+  function handleChange(event) {
+    const books = event.target.value;
+  
+    setBooks(books)
+  }
+  
+  //upon clicking the search button this function uses a prevent default to keep the page from reloading twice.
+  //it also pulls from the google books api the searched books
+  //seems to only be returning 10 books, worth looking into later 
+  function handleSubmit(event) {
+    event.preventDefault();
+    API.search()
+    .then(data => {
+      console.log(data.data.items)
+      setResults(data.data.items)
+      // console.log(data);
+    })
+    // console.log(books)
+
+    
+  }
+  
 
 
   return (
@@ -40,27 +62,46 @@ function Search() {
             <h1>(React) Google Books Search</h1>
             <p>Search for and Save Books of Interest</p>
           </Jumbotron>
-          <SearchBar />
-          {books.length ? (
+
+        {/* searchBar */}
+          <div className="searchContainer">
+            <h2 className="searchHeader">Book Search</h2>
+            <form onSubmit={handleSubmit}>
+                <div className="form-group searchBar">
+                    <input type="text" onChange={handleChange}
+                        className="form-control"
+                        placeholder="Search"
+                        autoComplete="off" />
+                    <button type="submit" className="btn btn-dark mt-2">Search</button>
+                </div>
+            </form>
+        </div>
+
+
+
+          {results.length ? (
             <List>
-              {books.map(book => {
+              {results.map(book => {
                 return (
-                  <ListItem key={book._id}>
-                    <a href={"/books/" + book._id}>
+                  <ListItem key={book.id}>
+                    <a href={book.volumeInfo.previewLink}>
+                    <img src={book.volumeInfo.imageLinks.thumbnail} alt={book.title}/>
                       <strong>
-                        {book.title} by {book.author}
+                        {book.volumeInfo.title} 
                       </strong>
+                      <strong> Author(s):{book.volumeInfo.authors}</strong>
+                      
                     </a>
                     <DeleteBtn onClick={() => { }} />
                   </ListItem>
                 );
               })}
-            </List>
-          ) : (
-              // <h3>No Results to Display</h3>
-              <Results />
+           </List>
+            ) : (
+              <h3>No Results to Display</h3>
             )}
-        </Col>
+          </Col>
+
       </Row>
     </Container>
   );
