@@ -7,13 +7,15 @@ import { List, ListItem } from "../components/List";
 import Nav from "../components/Nav";
 
 
-//currently returning the same 10 books everytime search is clicked 
+
+//currently returning the same 10 books every time search is clicked 
+//fixed needed to grab the search term and use that to concatenate the url
 
 function Search() {
   // Setting our component's initial state
+  //books is the typed search value
   const [books, setBooks] = useState("")
   const [results, setResults] = useState([])
-  // const [formObject, setFormObject] = useState("")
 
   // Load all books and store them with setBooks
   useEffect(() => {
@@ -37,18 +39,15 @@ function Search() {
   
   //upon clicking the search button this function uses a prevent default to keep the page from reloading twice.
   //it also pulls from the google books api the searched books
-  //seems to only be returning 10 books, worth looking into later 
   function handleSubmit(event) {
     event.preventDefault();
-    API.search()
+    API.search(books)
     .then(data => {
       console.log(data.data.items)
       setResults(data.data.items)
       // console.log(data);
     })
-    // console.log(books)
-
-    
+    console.log(books)
   }
   
 
@@ -85,7 +84,7 @@ function Search() {
                 return (
                   <ListItem key={book.id}>
                     <a href={book.volumeInfo.previewLink}>
-                    <img src={book.volumeInfo.imageLinks.thumbnail} alt={book.title}/>
+                    <img src={book.volumeInfo.imageLinks?.thumbnail} alt={book.title}/>
                       <strong>
                         {book.volumeInfo.title} 
                       </strong>

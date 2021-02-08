@@ -22,11 +22,13 @@ export default {
     return axios.post("/api/books", bookData);
   }, 
   //Searches google books
-  search: function (query) {
-    return axios.get(BASEURL + query + KEY + APIKEY)
+  //books is search term
+  search: function (books) {
+    return axios.get(BASEURL +books+ KEY + APIKEY + "&maxResults=40") 
   },
   //returns the searched book
   singleBook: function (query){
     return axios.get(BOOKURL + query);
   }
 };
+

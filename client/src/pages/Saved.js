@@ -6,7 +6,6 @@ import { Col, Row, Container } from "../components/Grid";
 import { List, ListItem } from "../components/List";
 import { Input, TextArea, FormBtn } from "../components/Form";
 // import SearchBar from '../components/SearchBar';
-import Results from '../components/Results'
 import Nav from "../components/Nav";
 
 function Search() {
@@ -56,7 +55,7 @@ function Search() {
 
 
 
-
+{/* 
 
           {books.length ? (
             <List>
@@ -75,8 +74,8 @@ function Search() {
             </List>
           ) : (
               // <h3>No Results to Display</h3>
-              <Results />
-            )}
+              // <Results />
+            )} */}
         </Col>
       </Row>
     </Container>
