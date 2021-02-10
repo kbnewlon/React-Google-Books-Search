@@ -6,7 +6,12 @@ import { Col, Row, Container } from "../components/Grid";
 import { List, ListItem } from "../components/List";
 import Nav from "../components/Nav";
 
+//TODO: 
+// clean up returned book cards
+//just show the thumbnail??
 
+//next, need to create save button
+// connect save button to book id and mongoDB
 
 //currently returning the same 10 books every time search is clicked 
 //fixed needed to grab the search term and use that to concatenate the url
