@@ -14,7 +14,7 @@ import Nav from "../components/Nav";
 // connect save button to book id and mongoDB
 
 //currently returning the same 10 books every time search is clicked 
-//fixed needed to grab the search term and use that to concatenate the url
+//fixed needed to grab the search term and use that to concatenate the url (books)
 
 function Search() {
   // Setting our component's initial state
@@ -63,8 +63,8 @@ function Search() {
       <Row className="row">
         <Col size="md-12">
           <Jumbotron>
-            <h1>(React) Google Books Search</h1>
-            <p>Search for and Save Books of Interest</p>
+            <h1 className='header' style={{color: 'white'}}>(React) Google Books Search</h1>
+            <h3 className='subHeader' style={{color: 'white'}}>Search for and Save Books of Interest</h3>
           </Jumbotron>
 
         {/* searchBar */}

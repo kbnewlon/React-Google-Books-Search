@@ -31,7 +31,8 @@ function Search() {
   
     setBooks(books)
   }
-  
+  console.log(books)
+
   function handleSubmit(event) {
     event.preventDefault();
   
@@ -52,11 +53,6 @@ function Search() {
 
           {/* <SearchBar /> */}
 
-
-
-
-{/* 
-
           {books.length ? (
             <List>
               {books.map(book => {
@@ -68,15 +64,15 @@ function Search() {
                       </strong>
                     </a>
                     <DeleteBtn onClick={() => { }} />
-                  </ListItem>
+                    </ListItem>
                 );
               })}
-            </List>
-          ) : (
-              // <h3>No Results to Display</h3>
-              // <Results />
-            )} */}
-        </Col>
+           </List>
+            ) : (
+              <h3>No Results to Display</h3>
+            )}
+          </Col>
+
       </Row>
     </Container>
   );
