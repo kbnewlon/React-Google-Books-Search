@@ -4,14 +4,14 @@ import DeleteBtn from "../components/DeleteBtn";
 import API from "../utils/API";
 import { Col, Row, Container } from "../components/Grid";
 import { List, ListItem } from "../components/List";
-import { Input, TextArea, FormBtn } from "../components/Form";
-// import SearchBar from '../components/SearchBar';
 import Nav from "../components/Nav";
+// import { Input, TextArea, FormBtn } from "../components/Form";
+
 
 function Search() {
   // Setting our component's initial state
   const [books, setBooks] = useState([])
-  const [formObject, setFormObject] = useState("")
+  // const [formObject, setFormObject] = useState("")
 
   // Load all books and store them with setBooks
   useEffect(() => {
@@ -26,19 +26,28 @@ function Search() {
       )
       .catch(err => console.log(err));
   };
-  function handleChange(event) {
-    const book = event.target.value;
 
-    setBooks(books)
+  //functions for search bar
+
+  // function handleChange(event) {
+  //   const book = event.target.value;
+
+  //   setBooks(books)
+  // }
+  // console.log(books)
+
+  // function handleSubmit(event) {
+  //   event.preventDefault();
+
+  //   console.log(books)
+  // }
+
+  //delete book from DB
+  function deleteBook(id) {
+    API.deleteBook(id)
+      .then(res => loadBooks())
+      .catch(err => console.log(err));
   }
-  console.log(books)
-
-  function handleSubmit(event) {
-    event.preventDefault();
-
-    console.log(books)
-  }
-
 
 
   return (
@@ -51,7 +60,6 @@ function Search() {
             <h3 className='subHeader' style={{ color: 'white' }}>Search for and Save Books of Interest</h3>
           </Jumbotron>
 
-          {/* <SearchBar /> */}
 
           {books.length ? (
             <List>
@@ -63,8 +71,7 @@ function Search() {
                         {book.title} by {book.author}
                       </strong>
                     </a>
-                    <DeleteBtn onClick={() => { }} />
-                  </ListItem>
+                    <DeleteBtn onClick={() => deleteBook(book._id)} />                  </ListItem>
                 );
               })}
             </List>

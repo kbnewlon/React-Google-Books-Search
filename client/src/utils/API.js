@@ -10,11 +10,11 @@ export default {
     return axios.get("/api/books");
   },
   // Gets the book with the given id
-  getBook: function(id) {
-    return axios.get("/api/books/" + id);
-  },
+  // getBook: function(id) {
+  //   return axios.get("/api/books/" + id);
+  // },
   // Deletes the book with the given id
-  deleteBook: function(id) {
+  delete: function(id) {
     return axios.delete("/api/books/" + id);
   },
   // Saves a book to the database
@@ -27,8 +27,8 @@ export default {
     return axios.get(BASEURL +books+ KEY + APIKEY + "&maxResults=40") 
   },
   //returns the searched book
-  singleBook: function (query){
-    return axios.get(BOOKURL + query);
-  }
+  // singleBook: function (query){
+  //   return axios.get(BOOKURL + query);
+  // }
 };
 
