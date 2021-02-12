@@ -45,7 +45,8 @@ function Search() {
   //delete book from DB
   function deleteBook(id) {
     API.deleteBook(id)
-      .then(res => loadBooks())
+      .then(res =>
+        loadBooks(res.data))
       .catch(err => console.log(err));
   }
 

@@ -1,6 +1,6 @@
 import axios from "axios";
 const BASEURL = "https://www.googleapis.com/books/v1/volumes?q=";
-const BOOKURL = "https://www.googleapis.com/books/v1/volumes/";
+// const BOOKURL = "https://www.googleapis.com/books/v1/volumes/";
 const KEY = "&key=";
 const APIKEY = "AIzaSyDmDHr4-clbDIhBsoLXM3t5TZfYdT0OFFo"
 
