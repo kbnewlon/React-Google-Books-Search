@@ -74,7 +74,7 @@ function Search() {
                 <div className="form-group searchBar">
                     <input type="text" onChange={handleChange}
                         className="form-control"
-                        placeholder="Search"
+                        placeholder="Search by Title of Author"
                         autoComplete="off" />
                     <button type="submit" className="btn btn-dark mt-2">Search</button>
                 </div>

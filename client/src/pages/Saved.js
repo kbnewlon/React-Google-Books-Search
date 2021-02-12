@@ -28,17 +28,17 @@ function Search() {
   };
   function handleChange(event) {
     const book = event.target.value;
-  
+
     setBooks(books)
   }
   console.log(books)
 
   function handleSubmit(event) {
     event.preventDefault();
-  
+
     console.log(books)
   }
-  
+
 
 
   return (
@@ -47,8 +47,8 @@ function Search() {
       <Row className="row">
         <Col size="md-12">
           <Jumbotron>
-            <h1>(React) Google Books Search</h1>
-            <p>Search for and Save Books of Interest</p>
+            <h1 className='header' style={{ color: 'white' }}>(React) Google Books Search</h1>
+            <h3 className='subHeader' style={{ color: 'white' }}>Search for and Save Books of Interest</h3>
           </Jumbotron>
 
           {/* <SearchBar /> */}
@@ -64,14 +64,14 @@ function Search() {
                       </strong>
                     </a>
                     <DeleteBtn onClick={() => { }} />
-                    </ListItem>
+                  </ListItem>
                 );
               })}
-           </List>
-            ) : (
+            </List>
+          ) : (
               <h3>No Results to Display</h3>
             )}
-          </Col>
+        </Col>
 
       </Row>
     </Container>
